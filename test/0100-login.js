@@ -39,7 +39,6 @@ describe("Login", function () {
       process.env.ACCESS_TOKEN = data.access_token;
 
       console.log(`POST ${endpoint} resolved with status ${status} and data ${JSON.stringify(data)}`);
-
     } catch(error) {
       console.error(`POST ${endpoint} rejected with error ${JSON.stringify(error)}`); 
     }

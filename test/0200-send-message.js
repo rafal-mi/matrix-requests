@@ -35,10 +35,7 @@ describe("Send message", function () {
       status = response.status;
       const data = response.data;
 
-      process.env.ACCESS_TOKEN = data.access_token;
-
       console.log(`put ${endpoint} resolved with status ${status} and data ${JSON.stringify(data)}`);
-
     } catch(error) {
       console.error(`put ${endpoint} rejected with error ${JSON.stringify(error)}`); 
     }
